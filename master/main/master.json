@@ -1,5 +1,8 @@
 {
   "apiPort": 8070,
   "apiReadTimeout": 5000,
-  "apiWriteTimeout": 5000
+  "apiWriteTimeout": 5000,
+
+  "etcdEndPoints": ["http://localhost:2379"],
+  "etcdDialTimeout": 5000
 }
