@@ -5,6 +5,7 @@ import (
 	"flag"
 	"fmt"
 	"runtime"
+	"time"
 )
 
 var (
@@ -40,6 +41,10 @@ func main() {
 	err = master.InitApiServer()
 	if err != nil {
 		goto ERR
+	}
+
+	for {
+		time.Sleep(1 * time.Second)
 	}
 
 ERR:
